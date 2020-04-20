@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class CaesarCipherDecoder {
-    private CaesarCipherEncoder EncoderDetails = new CaesarCipherEncoder("", 0);
+    private CaesarCipherEncoder EncoderDetails = new CaesarCipherEncoder(user, 0);
 
     private String userText;
     private int decodeKey;
