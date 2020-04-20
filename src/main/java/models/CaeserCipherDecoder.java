@@ -3,8 +3,8 @@ package models;
 import java.util.ArrayList;
 import java.util.List;
 
-class CaesarCipherDecoder {
-    private CaesarCipherEncoder EncoderDetails = new CaesarCipherEncoder(user, 0);
+public class CaesarCipherDecoder {
+    private CaesarCipherEncoder EncoderDetails = new CaesarCipherEncoder("", 0);
 
     private String userText;
     private int decodeKey;
@@ -34,5 +34,24 @@ class CaesarCipherDecoder {
             }
         }
         return String.join("", decodedOutput);
+    }
+
+
+    public String getUserText() {
+        this.userText = EncoderDetails.getInputString();
+        return this.userText;
+    }
+
+    public int getUserKey() {
+        this.decodeKey = EncoderDetails.getShiftKey();
+        return this.decodeKey;
+    }
+
+    public String setUserText(String userInput) {
+        return this.userText = userInput;
+    }
+
+    public int setUserKey(int userKey) {
+        return this.decodeKey = userKey;
     }
 }
