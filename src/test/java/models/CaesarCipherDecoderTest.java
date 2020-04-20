@@ -28,4 +28,10 @@ public class CaesarCipherDecoderTest {
         assertEquals("C", testCaesarCipherDecoder.decodeUserText());
     }
 
+    @Test
+    public void decodesUserText_decodesTwoLetterString_String() throws Exception {
+        CaesarCipherDecoder testCaesarCipherDecoder=new CaesarCipherDecoder("TH", 1);
+        assertEquals("SG", testCaesarCipherDecoder.decodeUserText());
+    }
+
 }
