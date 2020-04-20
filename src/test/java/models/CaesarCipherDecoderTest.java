@@ -40,4 +40,11 @@ public class CaesarCipherDecoderTest {
         assertEquals("BROWNFOX", testCaesarCipherDecoder.decodeUserText());
     }
 
+    @Test
+    public void decodesUserText_decodesStringWithDifferentAlphabeticalCaseLetters_String() throws Exception {
+        CaesarCipherDecoder testCaesarCipherDecoder=new CaesarCipherDecoder(
+                "VyyuEZdkLVOC", 10);
+        assertEquals("LookUPtaBLES", testCaesarCipherDecoder.decodeUserText());
+    }
+
 }
