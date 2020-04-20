@@ -3,7 +3,7 @@
 Wekesa Buyahi
 
 ## Description of project
-Ceaser Application ask users to  to enter a word then it decoded the wo
+Ceaser Application ask users to  to enter a word then it decoded the word
 
 ## Technologie used
 
