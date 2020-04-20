@@ -47,4 +47,17 @@ public class CaesarCipherDecoderTest {
         assertEquals("LookUPtaBLES", testCaesarCipherDecoder.decodeUserText());
     }
 
+    @Test
+    public void decodeUserText_decodesStringWithASpaceInBetweenTwoStrings_String() throws Exception {
+        CaesarCipherDecoder testCaesarCipherDecoder=new CaesarCipherDecoder(
+                "Olr OLR", 13);
+        assertEquals("Bye BYE", testCaesarCipherDecoder.decodeUserText());
+    }
+
+    @Test
+    public void decodeUserText_decodesStringWithMultipleWordsWithSpacesAndSpecialCharacters_String() throws Exception {
+        CaesarCipherDecoder testCaesarCipherDecoder=new CaesarCipherDecoder("1. Pbjxyf%Pmjymnqj Pmjymnqj ky. @Rfpbf", 5);
+        assertEquals("1. weta%Khee kenndrick ft. @Makaveli", testCaesarCipherDecoder.decodeUserText());
+    }
+
 }
