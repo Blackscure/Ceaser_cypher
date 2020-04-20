@@ -11,9 +11,7 @@ public class App {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         boolean programRunning = true;
 
-        // Initialize the constructor to create new instances of the CaesarCipherEncoder and
-        // CaesarCipherDecoder classes at the beginning of the program instead of when the
-        // program is running. This will make the program run more efficiently instead of having
+
         CaesarCipherEncoder encoder = new CaesarCipherEncoder("", 0);
         CaesarCipherDecoder decoder = new CaesarCipherDecoder("", 0);
 
