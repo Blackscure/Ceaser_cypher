@@ -22,4 +22,10 @@ public class CaesarCipherDecoderTest {
         assertEquals(0, testCaesarCipherDecoder.getUserKey());
     }
 
+    @Test
+    public void decodeUserText_decodesOneLetterString_String() throws Exception {
+        CaesarCipherDecoder testCaesarCipherDecoder=new CaesarCipherDecoder("D", 1);
+        assertEquals("C", testCaesarCipherDecoder.decodeUserText());
+    }
+
 }
