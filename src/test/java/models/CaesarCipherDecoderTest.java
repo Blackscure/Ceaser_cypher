@@ -53,11 +53,11 @@ public class CaesarCipherDecoderTest {
                 "Olr OLR", 13);
         assertEquals("Bye BYE", testCaesarCipherDecoder.decodeUserText());
     }
-
     @Test
     public void decodeUserText_decodesStringWithMultipleWordsWithSpacesAndSpecialCharacters_String() throws Exception {
         CaesarCipherDecoder testCaesarCipherDecoder=new CaesarCipherDecoder("1. Pbjxyf%Pmjymnqj Pmjymnqj ky. @Rfpbf", 5);
-        assertEquals("1. weta%Khee kenndrick ft. @Makaveli", testCaesarCipherDecoder.decodeUserText());
+        assertEquals("1. Kwesta%Khethile Khethile ft. @Makwa", testCaesarCipherDecoder.decodeUserText());
     }
+
 
 }
